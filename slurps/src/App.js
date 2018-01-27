@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Section2 from "./components/Section2.js"
 import Section3 from "./components/Section3.js"
+import Section4 from "./components/Section4.js"
+import Section5 from "./components/Section5.js"
 import './App.css';
 
 class App extends Component {
@@ -34,13 +36,11 @@ class App extends Component {
   }
   
   setBaseTea(tea) {
-    console.log(tea);
     this.setState({baseTea:tea})
   } 
   
   setSelectedFlavors(flavor) {
     let flavors = this.state.selectedFlavors;
-    console.log(flavors);
     if (flavors.length < 3) {
       flavors.push(flavor);
       this.setState({selectedFlavors:flavors})
@@ -52,7 +52,7 @@ class App extends Component {
   render() {
     const {baseTea, selectedFlavors} = this.state;
     return (
-      <div className="app">
+      <div className="app container">
         <div className="page-wrapper">
           <div className="section section-1">
             <div className="header-text">
@@ -73,7 +73,13 @@ class App extends Component {
             setSelectedFlavors={this.setSelectedFlavors}
             />
           <div className="section-divider"></div>
-          <h2>Name Tea</h2>
+          <h2>Name Your Tea</h2>
+          <Section4 
+            baseTea={baseTea}
+            selectedFlavors={selectedFlavors}
+            />
+          <div className="section-divider"></div>
+          <Section5 />
         </div>
       </div>
     );

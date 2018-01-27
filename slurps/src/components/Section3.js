@@ -39,8 +39,8 @@ export default class Section3 extends Component {
   render() {
     const {allFlavors, baseTea, selectedFlavors} = this.props;
     return (
-      <div className="sub-section section-3">
-        <div className="tea selected-tea">
+      <div className="row">
+        <div className="tea col-xs-4">
           {
             baseTea.name ?
               <img className="tea-image" src={`./img/${baseTea.image}`} alt={baseTea.name}/>
@@ -49,9 +49,7 @@ export default class Section3 extends Component {
           }
           {this.showSelectedFlavors(selectedFlavors)}
         </div>
-        <div className="tea-row">
-          <div className="flavor-col">{this.getFlavorCol(allFlavors)}</div>
-        </div>
+        <div className="col-xs-8 flavor-col">{this.getFlavorCol(allFlavors)}</div>
       </div>
     )
   }
