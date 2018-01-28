@@ -4,6 +4,7 @@ import Section3 from "./components/Section3.js"
 import Section4 from "./components/Section4.js"
 import Section5 from "./components/Section5.js"
 import './App.css';
+import $ from 'jquery'; 
 
 class App extends Component {
   constructor() {
@@ -58,8 +59,11 @@ class App extends Component {
   
   showNextSection(section, enabled, event) {
     if (enabled && section === this.state.curStep) {
-      console.log("progress");
-      this.setState({curStep: this.state.curStep + 1})
+      this.setState({curStep: this.state.curStep + 1}, () => {
+        $('html, body').animate({
+            scrollTop: $(`#section${this.state.curStep}`).offset().top
+        }, 1000);
+      })
     }
   }
   
@@ -88,7 +92,7 @@ class App extends Component {
           
           {
             curStep > 1 &&
-              <div>
+              <div id="section2">
                 <h2>Add Flavor</h2>
                 <Section3 
                   baseTea={baseTea} 
@@ -106,7 +110,7 @@ class App extends Component {
           
           {
             curStep > 2 &&
-            <div>
+            <div id="section3">
               <h2>Name Your Tea</h2>
               <Section4 
                 baseTea={baseTea}
@@ -123,7 +127,7 @@ class App extends Component {
           
           {
             curStep > 3 &&
-            <div>
+            <div id="section4">
               <Section5 
                 selectedFlavors={selectedFlavors}
                 teaName={teaName}/>
