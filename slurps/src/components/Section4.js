@@ -30,7 +30,7 @@ export default class Section4 extends Component {
   }
   
   render() {
-    const {selectedFlavors, baseTea} = this.props;
+    const {selectedFlavors, baseTea, teaName, updateName} = this.props;
     return (
       <div className="row">
         <div className="tea col-xs-4">
@@ -46,7 +46,7 @@ export default class Section4 extends Component {
         </div>
         <div className="col-xs-4">
           <form>
-            <input type="text" name="name" />
+            <input type="text" name="name" value={teaName} onChange={updateName}/>
             <br />
             <small>Click here to edit</small>
           </form>

@@ -10,6 +10,7 @@ class App extends Component {
     super();
     this.setBaseTea = this.setBaseTea.bind(this);
     this.setSelectedFlavors = this.setSelectedFlavors.bind(this);
+    this.updateName = this.updateName.bind(this);
     
     this.teas = [
       {name:"Black", image:"black_tea.png"},
@@ -31,7 +32,8 @@ class App extends Component {
     
     this.state = {
       baseTea: {},
-      selectedFlavors: []
+      selectedFlavors: [],
+      teaName: "Grizzly Juice"
     }
   }
   
@@ -49,8 +51,12 @@ class App extends Component {
     }
   }
   
+  updateName(event) {
+    this.setState({teaName:event.target.value})
+  }
+  
   render() {
-    const {baseTea, selectedFlavors} = this.state;
+    const {selectedFlavors, teaName, baseTea} = this.state;
     return (
       <div className="app container">
         <div className="page-wrapper">
@@ -77,9 +83,13 @@ class App extends Component {
           <Section4 
             baseTea={baseTea}
             selectedFlavors={selectedFlavors}
+            teaName={teaName}
+            updateName={this.updateName}
             />
           <div className="section-divider"></div>
-          <Section5 />
+          <Section5 
+            selectedFlavors={selectedFlavors}
+            teaName={teaName}/>
         </div>
       </div>
     );

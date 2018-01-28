@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 648 818">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        font-size: 72px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        font-family: HelveticaNeue-Bold, Helvetica Neue;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        font-size: 24px;
+      }
+
+      .cls-4 {
+        font-size: 14px;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.06em;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-7 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-8 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-9 {
+        opacity: 0.5;
+      }
+
+      .cls-10 {
+        opacity: 0.35;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="70.25" cy="378.25" r="31.75"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <circle class="cls-1" cx="70.25" cy="462" r="31.75"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <circle class="cls-1" cx="70.25" cy="545.74" r="31.75"/>
+    </clipPath>
+    <image id="image" width="400" height="400" xlink:href="../../../swatches/lemon.png"/>
+  </defs>
+  <title>tea_bag</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <image width="647" height="818" transform="translate(1)" xlink:href="../../../tea-bag/bag.png"/>
+      <text class="cls-2" transform="translate(35.12 173.6)">Grizzly<tspan x="0" y="86.4">Juice</tspan></text>
+      <text class="cls-3" transform="translate(35.12 311.6)">A black tea blend with</text>
+      <text class="cls-3" transform="translate(118.12 383.6)">Lemon Rind</text>
+      <text class="cls-3" transform="translate(118.12 466.6)">Ginger</text>
+      <text class="cls-3" transform="translate(118.12 550.6)">Blueberry</text>
+      <text class="cls-3" transform="translate(38.12 625.6)">Custom Slurps</text>
+      <text class="cls-4" transform="translate(38.12 650.6)">ww<tspan class="cls-5" x="22.79" y="0">w</tspan><tspan x="33.42" y="0">.customslurps.com</tspan></text>
+      <g class="cls-6">
+        <use transform="translate(36.03 344.03) scale(0.17)" xlink:href="#image"/>
+      </g>
+      <g class="cls-7">
+        <use transform="translate(36.03 427.78) scale(0.17)" xlink:href="#image"/>
+      </g>
+      <g class="cls-8">
+        <use transform="translate(36.03 511.52) scale(0.17)" xlink:href="#image"/>
+      </g>
+      <image class="cls-9" width="364" height="679" transform="translate(0 32)" xlink:href="../../../tea-bag/shadow_top.png"/>
+      <image class="cls-10" width="358" height="678" transform="translate(0 30)" xlink:href="../../../tea-bag/light.png"/>
+    </g>
+  </g>
+</svg>

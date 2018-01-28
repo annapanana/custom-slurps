@@ -36,6 +36,12 @@ h3 {
   padding: 60px;
 }
 
+.section-divider {
+  background-color: #313131;
+  height: 20px;
+  width: 100%;
+}
+
 .section-1 {
   background: url(./img/header_img.png);
   background-repeat: no-repeat;
@@ -118,22 +124,40 @@ input {
   border-bottom: solid 2px #313131;
 }
 
-
-.section-divider {
-  background-color: #313131;
-  height: 20px;
-  width: 100%;
+.top-padding {
+  padding-top: 100px;
+}
+.bag-container {
+  padding-left: 150px;
 }
 
-.App-title {
-  font-size: 1.5em;
+/* SVG TEXT */
+.bag-header {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 5em;
 }
 
-.App-intro {
-  font-size: large;
+.tea-desc {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.4em;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.tea-footer {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.flavor-circle-1 {
+  clip-path: url(#clip-path);
+}
+
+.flavor-circle-2 {
+  clip-path: url(#clip-path-2);
+}
+
+.flavor-circle-3 {
+  clip-path: url(#clip-path-3);
 }
