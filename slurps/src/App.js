@@ -3,9 +3,9 @@ import Section2 from "./components/Section2.js"
 import Section3 from "./components/Section3.js"
 import Section4 from "./components/Section4.js"
 import Section5 from "./components/Section5.js"
-import $ from 'jquery'; 
-
+// import './App.css';
 import './styles/home.sass';
+import $ from 'jquery'; 
 
 class App extends Component {
   constructor() {
@@ -72,7 +72,7 @@ class App extends Component {
   render() {
     const {selectedFlavors, teaName, baseTea, curStep} = this.state;
     return (
-      <div className="container">
+      <div className="app container">
         <div className="page-wrapper">
           <div className="section-1">
             <div className="nav-bar">

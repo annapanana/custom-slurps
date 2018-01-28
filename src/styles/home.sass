@@ -1,0 +1,151 @@
+div.container
+  display: flex
+  justify-content: center
+  width: 1250px
+  font-family: sans-serif
+div.page-wrapper
+  width: 100%
+  height: 100%
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+h1
+  font-weight: bold
+  color: #313131
+  font-size: 7em
+  width: 50%
+h2
+  margin: 1em 2em
+  font-weight: bold
+  font-size: 3em
+h3
+  margin-top: 1em
+  font-size: 1em
+  font-weight: 600
+div.subtext
+  font-size: 1.8em
+  font-weight: 600
+button.slurp-btn
+  padding: 10px 24px
+  border-radius: 0
+  border: solid black 3px
+  background-color: white
+  font-size: 1.4em
+  font-family: sans-serif
+  font-weight: bold
+  margin-top: 1em
+div.section
+  padding: 40px 60px
+div.progress-section
+  margin-top: 50px
+  text-align: center
+  padding: 10px 0
+  background-color: #ABCBC8
+  cursor: pointer
+  transition: background-color .2s ease
+  &:hover
+    background-color: #95BCB8
+img.progress-arrow
+  width: 35px
+  opacity: .6
+div.section-divider
+  background-color: #313131
+  height: 20px
+  width: 100%
+div.nav-bar
+  padding: 2em
+  display: flex
+  justify-content: flex-end
+div.nav-el
+  font-weight: 600
+  font-size: 1.6em
+  font-family: sans-serif
+  padding: 0 25px
+  cursor: pointer
+  transition: opacity .2s ease
+  &:hover
+    opacity: .5
+div.section-1
+  background: url(../img/header_img.png)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  min-height: 500px
+div.tea
+  display: flex
+  flex-flow: column
+  justify-content: flex-start
+  align-items: center
+  padding: 0 30px
+  text-align: center
+// TODO this might be able to be an & class
+div.selected-tea
+  margin-left: -100px
+  margin-top: 75px
+img.tea-image
+  width: 200px
+  height: 200px
+  border-radius: 50%
+  margin-bottom: 30px
+  border: solid black 4px
+div.tea-selection
+  opacity: .5
+div.empty
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  background-color: #D8D8D8
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.5)
+div.empty-tea
+  width: 200px
+  height: 200px
+  margin-bottom: 30px
+div.flavor-col
+  display: flex
+  flex-flow: row
+  justify-content: flex-start
+  flex-wrap: wrap
+div.flavor
+  width: 200px
+  margin-bottom: 30px
+  display: flex
+  justify-content: center
+img.flavor-img
+  width: 100px
+  height: 100px
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+  border-radius: 50%
+// TODO REfactor
+div.hoverable:hover
+  cursor: pointer
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3), 0 3px 8px rgba(0,0,0,0.4)
+div.section-4
+  margin-left: 100px
+input
+  border: none
+  font-size: 1.4em
+  font-weight: 500
+  width: 250px
+  border-bottom: solid 2px #313131
+div.top-padding
+  padding-top: 100px
+div.bag-container
+  padding-left: 150px
+
+// SVG Text -- Pull this outp
+text.bag-header
+  font-family: sans-serif
+  font-weight: bold
+  font-size: 5em
+text.tea-desc
+  font-family: sans-serif
+  font-weight: bold
+  font-size: 1.4em
+text.tea-footer
+  font-family: sans-serif
+  font-weight: bold
+  font-size: 1.2em
+g.flavor-circle-1
+  clip-path: url(#clip-path)
+g.flavor-circle-2
+  clip-path: url(#clip-path-2)
+g.flavor-circle-3
+  clip-path: url(#clip-path-3)
