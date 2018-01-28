@@ -14,9 +14,9 @@ class App extends Component {
     this.updateName = this.updateName.bind(this);
     this.showNextSection = this.showNextSection.bind(this);
     this.teas = [
-      {name:"Black", image:"black_tea.png"},
-      {name:"Green", image:"green_tea.png"},
-      {name:"Red", image:"red_tea.png"}
+      {name:"Black", image:"black_tea.png", hover_image: "black_tea_hover.png"},
+      {name:"Green", image:"green_tea.png", hover_image: "green_tea_hover.png"},
+      {name:"Red", image:"red_tea.png", hover_image: "red _tea_hover.png"}
     ]
     
     this.flavors = [
