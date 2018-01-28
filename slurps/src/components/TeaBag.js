@@ -10,9 +10,9 @@ export default class TeaBag extends Component {
   }
   
   render() {
-    const {teaName, selectedFlavors, baseTea} = this.props,
+    const {teaName, selectedFlavors} = this.props,
           formattedName = teaName.includes(" ") ? this.splitName(teaName) : [teaName];
-          console.log(selectedFlavors);
+
     return (
       <svg viewBox="0 0 648 818" key={this.k++}>
         <defs>

@@ -36,6 +36,23 @@ h3 {
   padding: 60px;
 }
 
+.progress-section {
+  margin-top: 50px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #9ED8D5;
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+
+.progress-section:hover {
+  background-color: #7FC6C4;
+}
+
+.progress-arrow {
+  width: 35px;
+}
+
 .section-divider {
   background-color: #313131;
   height: 20px;
@@ -73,8 +90,12 @@ h3 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   margin-bottom: 30px;
+  border: solid black 4px;
+}
+
+.tea-selection {
+  opacity: .5;
 }
 
 .empty {
