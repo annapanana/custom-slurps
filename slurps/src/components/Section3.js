@@ -5,7 +5,7 @@ export default class Section3 extends Component {
     return flavors.map((flavor, key) => {
       return (
         <div className="tea flavor" key={key} onClick={this.props.setSelectedFlavors.bind(this, flavor)}>
-          <img className="flavor-img" src={`./img/${flavor.image}`} alt={flavor.name}/>
+          <img className="flavor-img hoverable" src={`./img/${flavor.image}`} alt={flavor.name}/>
           <h3>{flavor.name}</h3>
         </div>
       )

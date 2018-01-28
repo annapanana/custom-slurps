@@ -1,20 +1,6 @@
 import React, { Component } from 'react';
 
 export default class Section4 extends Component {
-  displayFlavors(flavors) {
-    return flavors.map((flavor, key) => {
-      return (
-        <div key={key} className="flavor">
-          {
-            flavor.name ? 
-              <img className={"flavor-img" + (key%2===1? " offset":"")} src={`./img/${flavor.image}`} alt={flavor.name}/>
-            :
-              <div className="empty"></div>
-          }
-        </div>
-      )
-    })
-  }
   
   getText(selectedFlavors) {
     switch (selectedFlavors.length) {
@@ -33,18 +19,7 @@ export default class Section4 extends Component {
     const {selectedFlavors, baseTea, teaName, updateName} = this.props;
     return (
       <div className="row">
-        <div className="tea col-xs-4">
-          {this.displayFlavors(selectedFlavors)}
-        </div>
-        <div className="tea selected-tea col-xs-4">
-          {
-            baseTea.name ?
-              <img className="tea-image" src={`./img/${baseTea.image}`} alt={baseTea.name}/>
-            :
-              <div className="empty empty-tea"></div>
-          }
-        </div>
-        <div className="col-xs-4">
+        <div className="col-xs-12 section-4">
           <form>
             <input type="text" name="name" value={teaName} onChange={updateName}/>
             <br />

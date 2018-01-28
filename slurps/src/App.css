@@ -4,7 +4,7 @@
 }
 
 .container {
-  width: 1200px;
+  width: 1250px;
   font-family: sans-serif;
 }
 
@@ -20,10 +20,9 @@ h1 {
 }
 
 h2 {
-  margin-top: 1em;
+  margin: 1em 2em;
   font-weight: bold;
   font-size: 3em;
-  margin-left: 100px;
 }
 
 h3 {
@@ -32,25 +31,38 @@ h3 {
   font-weight: 600;
 }
 
-.section {
-  padding: 60px;
+.subtext {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.slurp-btn {
+  padding: 10px 24px;
+  border-radius: 0;
+  border: solid black 3px;
+  background-color: white;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 1em;
 }
 
 .progress-section {
   margin-top: 50px;
   text-align: center;
   padding: 10px 0;
-  background-color: #9ED8D5;
+  background-color: #ABCBC8;
   cursor: pointer;
   transition: background-color .2s ease;
 }
 
 .progress-section:hover {
-  background-color: #7FC6C4;
+  background-color: #95BCB8;
 }
 
 .progress-arrow {
   width: 35px;
+  opacity: .6;
 }
 
 .section-divider {
@@ -59,11 +71,35 @@ h3 {
   width: 100%;
 }
 
+.nav-bar {
+  padding: 2em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-el {
+  font-weight: 600;
+  font-size: 1.6em;
+  font-family: sans-serif;
+  padding: 0 25px;
+  cursor: pointer;
+  transition: opacity .2s ease;
+}
+
+.nav-el:hover {
+  opacity: .5;
+}
+
+.section {
+  padding: 40px 60px;
+}
+
 .section-1 {
   background: url(./img/header_img.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .header-text {
@@ -133,8 +169,12 @@ h3 {
   border-radius: 50%;
 }
 
-.offset {
-  margin-left: -100px;
+.hoverable:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3), 0 3px 8px rgba(0,0,0,0.4);
+}
+.section-4 {
+  margin-left: 100px;
 }
 
 input {

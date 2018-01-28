@@ -36,6 +36,7 @@ class App extends Component {
       selectedFlavors: [],
       teaName: "Grizzly Juice",
       curStep: 1
+      // curStep: 4
     }
   }
   
@@ -69,13 +70,18 @@ class App extends Component {
   
   render() {
     const {selectedFlavors, teaName, baseTea, curStep} = this.state;
-    console.log("current step", curStep);
     return (
       <div className="app container">
         <div className="page-wrapper">
-          <div className="section section-1">
-            <div className="header-text">
-              <h1>Custom Slurps</h1>
+          <div className="section-1">
+            <div className="nav-bar">
+              <div className="nav-el">FAQ</div>
+              <div className="nav-el">About Us</div>
+            </div>
+            <div className="section">
+              <div className="header-text">
+                <h1>Custom Slurps</h1>
+              </div>
             </div>
           </div>
           <div className="section-divider"></div>
@@ -86,7 +92,7 @@ class App extends Component {
             baseTea={baseTea}/>
             
           <div className="progress-section" onClick={this.showNextSection.bind(this, 1, baseTea.name?true:false)}>
-            <img className="progress-arrow" src="/img/down-arrow.svg"/>
+            <img className="progress-arrow" src="/img/down-arrow.svg" alt="progress-arrow"/>
           </div>
           <div className="section-divider"></div>
           
@@ -101,7 +107,7 @@ class App extends Component {
                   setSelectedFlavors={this.setSelectedFlavors}/>
                   
                 <div className="progress-section" onClick={this.showNextSection.bind(this, 2, selectedFlavors.length > 0 ?true:false)}>
-                  <img className="progress-arrow" src="/img/down-arrow.svg"/>
+                  <img className="progress-arrow" src="/img/down-arrow.svg" alt="alt-arrow"/>
                 </div>
                 <div className="section-divider"></div>
               </div>
@@ -119,7 +125,7 @@ class App extends Component {
                 updateName={this.updateName}/>
                 
               <div className="progress-section" onClick={this.showNextSection.bind(this, 3, teaName.length > 0?true:false)}>
-                <img className="progress-arrow" src="/img/down-arrow.svg"/>
+                <img className="progress-arrow" src="/img/down-arrow.svg" alt="progress-arrow"/>
               </div>
               <div className="section-divider"></div>
             </div>
